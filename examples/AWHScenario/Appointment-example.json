@@ -1,0 +1,23 @@
+{
+    "resourceType": "Appointment",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Dr. Quack and Miko Chu Appointment<a name='mm'/></div>"
+    },
+    "id": "cf-1532543693561",
+    "status": "proposed",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/cf-1532538148184"
+        },
+        "status": "tentative"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/cf-1532538191476"
+        },
+        "status": "accepted"
+      }
+    ]
+  }

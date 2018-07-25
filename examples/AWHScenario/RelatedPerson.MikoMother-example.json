@@ -1,0 +1,34 @@
+{
+    "resourceType": "RelatedPerson",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Mother of Miko<a name='mm'/></div>"
+    },
+    "id": "cf-1532542407123",
+    "patient": {
+      "reference": "Patient/cf-1532538148184"
+    },
+    "name": [
+      {
+        "use": "usual",
+        "prefix": [
+          "Mrs"
+        ],
+        "given": [
+          "Mika",
+          "Cojuangco"
+        ],
+        "family": "Chu",
+        "text": "Mrs. Mika Cojuangco Chu"
+      }
+    ],
+    "relationship": {
+      "coding": [
+        {
+          "code": "MTH",
+          "system": "http://hl7.org/fhir/v3/RoleCode",
+          "display": "mother"
+        }
+      ]
+    }
+  }

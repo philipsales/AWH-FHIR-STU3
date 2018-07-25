@@ -1,0 +1,23 @@
+{
+    "resourceType": "Organization",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Allied World Healthcare<a name='mm'/></div>"
+    },
+    "id": "cf-1532545358075",
+    "type": [
+      {
+        "coding": [
+          {
+            "code": "cg",
+            "system": "http://hl7.org/fhir/organization-type",
+            "display": "Community Group"
+          }
+        ]
+      }
+    ],
+    "name": "Allied World Healthcare",
+    "alias": [
+      "Allied World Philippines Community Inc"
+    ]
+  }

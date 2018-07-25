@@ -1,0 +1,84 @@
+{
+    "resourceType": "Person",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Miko Chu - Person<a name='mm'/></div>"
+    },
+    "id": "cf-1532542476471",
+    "active": true,
+    "name": [
+      {
+        "use": "usual",
+        "prefix": [
+          "Mr"
+        ],
+        "given": [
+          "Miko",
+          "Cojuangco"
+        ],
+        "family": "Chu",
+        "suffix": [
+          "Jr."
+        ],
+        "text": "Mr. Miko Cojuangco Chu Jr."
+      }
+    ],
+    "telecom": [
+      {
+        "value": "6475265",
+        "system": "phone",
+        "use": "home"
+      },
+      {
+        "value": "09151848953",
+        "system": "other",
+        "use": "mobile"
+      },
+      {
+        "value": "6325395",
+        "system": "phone",
+        "use": "work"
+      }
+    ],
+    "gender": "male",
+    "birthDate": "2000-02-10",
+    "address": [
+      {
+        "use": "home",
+        "type": "physical",
+        "line": [
+          "First line",
+          "Second line",
+          "Third line"
+        ],
+        "city": "City",
+        "district": "District",
+        "state": "State",
+        "postalCode": "Postal Code",
+        "country": "Country",
+        "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+      },
+      {
+        "use": "work",
+        "type": "physical",
+        "line": [
+          "First line",
+          "Second line",
+          "Third line"
+        ],
+        "city": "City",
+        "district": "District",
+        "state": "State",
+        "postalCode": "Postal Code",
+        "country": "Country",
+        "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+      }
+    ],
+    "link": [
+      {
+        "target": {
+          "reference": "Patient/cf-1532538148184"
+        }
+      }
+    ]
+  }

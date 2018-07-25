@@ -1,0 +1,48 @@
+{
+    "resourceType": "Location",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Barangay Guimbal, Pototan<a name='mm'/></div>"
+    },
+    "id": "cf-1532540858580",
+    "status": "active",
+    "name": "Barangay Pototan",
+    "alias": [
+      "Barangay Pototan"
+    ],
+    "description": "House to House Visit in Barangay Pototan Area",
+    "type": {
+      "coding": [
+        {
+          "code": "COMM",
+          "system": "http://hl7.org/fhir/v3/RoleCode",
+          "display": "Community Location"
+        }
+      ]
+    },
+    "address": {
+      "line": [
+        "210",
+        "Sitio Ruhat",
+        "Purok"
+      ],
+      "city": "Iloilo",
+      "district": "Barangay Pototan",
+      "state": "Buiak",
+      "postalCode": "132425",
+      "country": "Philippines"
+    },
+    "position": {
+      "latitude": 46.51248,
+      "longitude": 42.11423
+    },
+    "physicalType": {
+      "coding": [
+        {
+          "code": "COMM",
+          "system": "http://hl7.org/fhir/v3/RoleCode",
+          "display": "Community Location"
+        }
+      ]
+    }
+  }

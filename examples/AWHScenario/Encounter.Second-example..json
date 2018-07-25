@@ -1,0 +1,28 @@
+{
+    "resourceType": "Encounter",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Second Encounter<a name='mm'/></div>"
+    },
+    "id": "cf-1532543008109",
+    "subject": {
+      "reference": "Patient/cf-1532538148184"
+    },
+    "status": "arrived",
+    "location": [
+      {
+        "location": {
+          "reference": "Location/cf-1532540858580"
+        }
+      }
+    ],
+    "statusHistory": [
+      {
+        "status": "arrived",
+        "period": {
+          "start": "2018-09-25T16:00:00.000Z",
+          "end": "2018-09-25T16:00:00.000Z"
+        }
+      }
+    ]
+  }

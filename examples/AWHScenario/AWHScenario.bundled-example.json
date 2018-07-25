@@ -1,0 +1,628 @@
+{
+    "resourceType": "Bundle",
+    "id": "cf-1532538050188",
+    "type": "collection",
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "Appointment",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Dr. Quack and Miko Chu Appointment<a name='mm'/></div>"
+          },
+          "id": "cf-1532543693561",
+          "status": "proposed",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/cf-1532538148184"
+              },
+              "status": "tentative"
+            },
+            {
+              "actor": {
+                "reference": "Practitioner/cf-1532538191476"
+              },
+              "status": "accepted"
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Condition",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>SIgns and Symptoms<a name='mm'/></div>"
+          },
+          "id": "cf-1532545066583",
+          "subject": {
+            "reference": "Patient/cf-1532538148184"
+          },
+          "context": {
+            "reference": "Encounter/cf-1532538160827"
+          },
+          "asserter": {
+            "reference": "Patient/cf-1532538148184"
+          },
+          "bodySite": [
+            {
+              "coding": [
+                {
+                  "code": "118646007",
+                  "system": "http://snomed.info/sct",
+                  "display": "Entire bone of head"
+                }
+              ]
+            }
+          ],
+          "onsetDateTime": "2018-07-01T20:00:00.000Z",
+          "clinicalStatus": "resolved",
+          "verificationStatus": "unknown"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Encounter",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Second Encounter<a name='mm'/></div>"
+          },
+          "id": "cf-1532543008109",
+          "subject": {
+            "reference": "Patient/cf-1532538148184"
+          },
+          "status": "arrived",
+          "location": [
+            {
+              "location": {
+                "reference": "Location/cf-1532540858580"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Encounter",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>First Encounter<a name='mm'/></div>"
+          },
+          "id": "cf-1532538160827",
+          "subject": {
+            "reference": "Patient/cf-1532538148184"
+          },
+          "status": "arrived",
+          "class": {
+            "system": "http://hl7.org/fhir/v3/ActCode",
+            "code": "FLD",
+            "display": "field"
+          },
+          "location": [
+            {
+              "location": {
+                "reference": "Location/cf-1532540858580"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Location",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Barangay Guimbal, Pototan<a name='mm'/></div>"
+          },
+          "id": "cf-1532540858580"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Media",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Photo Repository<a name='mm'/></div>"
+          },
+          "id": "cf-1532541339889",
+          "subject": {
+            "reference": "Patient/cf-1532538148184"
+          },
+          "content": {
+            "title": "Mugshot",
+            "contentType": "image/jpeg"
+          },
+          "type": "photo"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Organization",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Pototan Rural Health Unit<a name='mm'/></div>"
+          },
+          "id": "cf-1532538109883",
+          "identifier": [
+            {
+              "value": "93f226de-902b-11e8-9eb6-529269fb1451",
+              "system": "urn:uuid"
+            }
+          ],
+          "active": true,
+          "type": [
+            {
+              "coding": [
+                {
+                  "code": "prov",
+                  "system": "http://hl7.org/fhir/organization-type",
+                  "display": "Healthcare Provider"
+                }
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "value": "6475265",
+              "system": "phone",
+              "use": "home"
+            },
+            {
+              "value": "09151848953",
+              "system": "other",
+              "use": "mobile"
+            },
+            {
+              "value": "6325395",
+              "system": "phone",
+              "use": "work"
+            }
+          ],
+          "alias": [
+            "Pototan Rural Health Unit, Capiz, Philippines"
+          ],
+          "address": [
+            {
+              "use": "home",
+              "type": "physical",
+              "line": [
+                "First line",
+                "Second line",
+                "Third line"
+              ],
+              "city": "City",
+              "district": "District",
+              "state": "State",
+              "postalCode": "Postal Code",
+              "country": "Country",
+              "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+            }
+          ],
+          "partOf": {
+            "reference": "Organization/cf-1532540475676"
+          }
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Organization",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>IloIlo Regional Health Center<a name='mm'/></div>"
+          },
+          "id": "cf-1532540475676",
+          "identifier": [
+            {
+              "value": "93f226de-902b-11e8-9eb6-529269fb1451",
+              "system": "urn:uuid"
+            }
+          ],
+          "active": true,
+          "type": [
+            {
+              "coding": [
+                {
+                  "code": "prov",
+                  "system": "http://hl7.org/fhir/organization-type",
+                  "display": "Healthcare Provider"
+                }
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "value": "6475265",
+              "system": "phone",
+              "use": "home"
+            },
+            {
+              "value": "09151848953",
+              "system": "other",
+              "use": "mobile"
+            },
+            {
+              "value": "6325395",
+              "system": "phone",
+              "use": "work"
+            }
+          ],
+          "alias": [
+            "Pototan Rural Health Unit, Capiz, Philippines"
+          ],
+          "address": [
+            {
+              "use": "home",
+              "type": "physical",
+              "line": [
+                "First line",
+                "Second line",
+                "Third line"
+              ],
+              "city": "City",
+              "district": "District",
+              "state": "State",
+              "postalCode": "Postal Code",
+              "country": "Country",
+              "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Organization",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Allied World Healthcare<a name='mm'/></div>"
+          },
+          "id": "cf-1532545358075",
+          "type": [
+            {
+              "coding": [
+                {
+                  "code": "cg",
+                  "system": "http://hl7.org/fhir/organization-type",
+                  "display": "Community Group"
+                }
+              ]
+            }
+          ],
+          "name": "Allied World Healthcare",
+          "alias": [
+            "Allied World Philippines Community Inc"
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Patient",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Miko Chu - Patient<a name='mm'/></div>"
+          },
+          "id": "cf-1532538148184",
+          "identifier": [
+            {
+              "value": "62f226de-902b-11e8-9eb6-529269fb1459",
+              "system": "urn:uuid"
+            }
+          ],
+          "active": true,
+          "deceasedDateTime": "2018-07-25T16:12:15.975Z"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Person",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Miko Chu - Person<a name='mm'/></div>"
+          },
+          "id": "cf-1532542476471",
+          "active": true,
+          "name": [
+            {
+              "use": "usual",
+              "prefix": [
+                "Mr"
+              ],
+              "given": [
+                "Miko",
+                "Cojuangco"
+              ],
+              "family": "Chu",
+              "suffix": [
+                "Jr."
+              ],
+              "text": "Mr. Miko Cojuangco Chu Jr."
+            }
+          ],
+          "telecom": [
+            {
+              "value": "6475265",
+              "system": "phone",
+              "use": "home"
+            },
+            {
+              "value": "09151848953",
+              "system": "other",
+              "use": "mobile"
+            },
+            {
+              "value": "6325395",
+              "system": "phone",
+              "use": "work"
+            }
+          ],
+          "gender": "male",
+          "birthDate": "2000-02-10",
+          "address": [
+            {
+              "use": "home",
+              "type": "physical",
+              "line": [
+                "First line",
+                "Second line",
+                "Third line"
+              ],
+              "city": "City",
+              "district": "District",
+              "state": "State",
+              "postalCode": "Postal Code",
+              "country": "Country",
+              "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+            },
+            {
+              "use": "work",
+              "type": "physical",
+              "line": [
+                "First line",
+                "Second line",
+                "Third line"
+              ],
+              "city": "City",
+              "district": "District",
+              "state": "State",
+              "postalCode": "Postal Code",
+              "country": "Country",
+              "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+            }
+          ],
+          "link": [
+            {
+              "target": {
+                "reference": "Patient/cf-1532538148184"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Practitioner",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Dr. Quack - Community Physician<a name='mm'/></div>"
+          },
+          "id": "cf-1532538191476",
+          "identifier": [
+            {
+              "value": "53fefa32-fcbb-4ff8-8a92-55ee120877b7",
+              "system": "urn:uuid"
+            }
+          ],
+          "active": true,
+          "birthDate": "1960-02-10",
+          "name": [
+            {
+              "use": "official",
+              "prefix": [
+                "Dr."
+              ],
+              "given": [
+                "Quack",
+                "Quail"
+              ],
+              "family": "Quartz",
+              "suffix": [
+                "Sr"
+              ],
+              "text": "Dr. Quack Quail Quartz Sr"
+            }
+          ],
+          "address": [
+            {
+              "use": "home",
+              "type": "physical",
+              "line": [
+                "First line",
+                "Second line",
+                "Third line"
+              ],
+              "city": "City",
+              "district": "District",
+              "state": "State",
+              "postalCode": "Postal Code",
+              "country": "Country",
+              "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+            },
+            {
+              "use": "work",
+              "type": "physical",
+              "line": [
+                "First line",
+                "Second line",
+                "Third line"
+              ],
+              "city": "City",
+              "district": "District",
+              "state": "State",
+              "postalCode": "Postal Code",
+              "country": "Country",
+              "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+            }
+          ],
+          "telecom": [
+            {
+              "value": "6475265",
+              "system": "phone",
+              "use": "home"
+            },
+            {
+              "value": "09151848953",
+              "system": "other",
+              "use": "mobile"
+            },
+            {
+              "value": "6325395",
+              "system": "phone",
+              "use": "work"
+            }
+          ],
+          "gender": "female",
+          "qualification": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "code": "MD",
+                    "system": "http://hl7.org/fhir/v2/0360/2.7",
+                    "display": "Doctor of Medicine"
+                  }
+                ]
+              },
+              "period": {
+                "start": "2002-02-26T16:00:00.000Z",
+                "end": "2039-01-31T16:00:00.000Z"
+              },
+              "issuer": {
+                "reference": "Organization/cf-1532538109883"
+              }
+            }
+          ],
+          "communication": [
+            {
+              "coding": [
+                {
+                  "code": "en-AU",
+                  "system": "urn:ietf:bcp:47",
+                  "display": "English (Australia)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Practitioner",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Judith - Community Access Manager<a name='mm'/></div>"
+          },
+          "id": "cf-1532545346739",
+          "qualification": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "code": "MD",
+                    "system": "http://hl7.org/fhir/v2/0360/2.7",
+                    "display": "Doctor of Medicine"
+                  }
+                ]
+              },
+              "issuer": {
+                "reference": "Organization/cf-1532545358075"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Questionnaire",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Lifestyle Questionnaire<a name='mm'/></div>"
+          },
+          "id": "cf-1532538313823",
+          "status": "active",
+          "jurisdiction": [
+            {
+              "coding": [
+                {
+                  "system": "urn:iso:std:iso:3166",
+                  "code": "KH",
+                  "display": "Cambodia"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "QuestionnaireResponse",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Lifestyle QuestionsResponse - First Encounter<a name='mm'/></div>"
+          },
+          "id": "cf-1532538327496",
+          "subject": {
+            "reference": "Patient/cf-1532538148184"
+          },
+          "source": {
+            "reference": "Patient/cf-1532538148184"
+          },
+          "status": "completed",
+          "questionnaire": {
+            "reference": "Questionnaire/cf-1532538313823"
+          },
+          "context": {
+            "reference": "Encounter/cf-1532538160827"
+          },
+          "author": {
+            "reference": "Practitioner/cf-1532545346739"
+          }
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "QuestionnaireResponse",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Lifestyle QuestionsResponse - Second Encounter<a name='mm'/></div>"
+          },
+          "id": "cf-1532543970082",
+          "questionnaire": {
+            "reference": "Questionnaire/cf-1532538313823"
+          },
+          "status": "completed",
+          "context": {
+            "reference": "Encounter/cf-1532543008109"
+          },
+          "author": {
+            "reference": "Practitioner/cf-1532545346739"
+          },
+          "source": {
+            "reference": "Patient/cf-1532538148184"
+          }
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "RelatedPerson",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Mother of Miko<a name='mm'/></div>"
+          },
+          "id": "cf-1532542407123",
+          "patient": {
+            "reference": "Patient/cf-1532538148184"
+          }
+        }
+      }
+    ]
+  }

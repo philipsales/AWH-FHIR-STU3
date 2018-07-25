@@ -1,0 +1,16 @@
+{
+    "resourceType": "Media",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Photo Repository<a name='mm'/></div>"
+    },
+    "id": "cf-1532541339889",
+    "subject": {
+      "reference": "Patient/cf-1532538148184"
+    },
+    "content": {
+      "title": "Mugshot",
+      "contentType": "image/jpeg"
+    },
+    "type": "photo"
+}

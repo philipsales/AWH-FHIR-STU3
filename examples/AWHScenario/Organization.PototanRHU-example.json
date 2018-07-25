@@ -1,0 +1,66 @@
+{
+    "resourceType": "Organization",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Pototan Rural Health Unit<a name='mm'/></div>"
+    },
+    "id": "cf-1532538109883",
+    "identifier": [
+      {
+        "value": "93f226de-902b-11e8-9eb6-529269fb1451",
+        "system": "urn:uuid"
+      }
+    ],
+    "active": true,
+    "type": [
+      {
+        "coding": [
+          {
+            "code": "prov",
+            "system": "http://hl7.org/fhir/organization-type",
+            "display": "Healthcare Provider"
+          }
+        ]
+      }
+    ],
+    "telecom": [
+      {
+        "value": "6475265",
+        "system": "phone",
+        "use": "home"
+      },
+      {
+        "value": "09151848953",
+        "system": "other",
+        "use": "mobile"
+      },
+      {
+        "value": "6325395",
+        "system": "phone",
+        "use": "work"
+      }
+    ],
+    "alias": [
+      "Pototan Rural Health Unit, Capiz, Philippines"
+    ],
+    "address": [
+      {
+        "use": "home",
+        "type": "physical",
+        "line": [
+          "First line",
+          "Second line",
+          "Third line"
+        ],
+        "city": "City",
+        "district": "District",
+        "state": "State",
+        "postalCode": "Postal Code",
+        "country": "Country",
+        "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+      }
+    ],
+    "partOf": {
+      "reference": "Organization/cf-1532540475676"
+    }
+  }
