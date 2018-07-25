@@ -1,0 +1,55 @@
+<ValueSet>
+    <id value="awh-maritalstatus-stu3" />
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+    </meta>
+    <url value="https://example.org/fhir/ValueSet/awh-maritalstatus-stu3" />
+    <identifier>
+        <system value="http://art-decor.org/ns/oids/v" />
+        <value value="2.16.840.1.113883.2.4.3.11.60.40.2.7.9.1" />
+    </identifier>
+    <version value="0.0.1" />
+    <name value="MaritalStatus.ValueSet" />
+    <status value="active" />
+    <experimental value="true" />
+    <date value="2018-06-26" />
+    <publisher value="Allied World Healthcare Venturs: Innovation Labs" />
+    <contact>
+        <name value="AWH Ventures: Health Innovation Labs" />
+        <telecom>
+            <system value="url" />
+            <value value="http://alliedworld.healthcare" />
+        </telecom>
+    </contact>
+    <contact>
+        <name value="Jim Poole" />
+        <telecom>
+            <system value="email" />
+            <value value="jim@alliedworld.heatlhcare" />
+        </telecom>
+    </contact>
+    <contact>
+        <name value="Philip Sales" />
+        <telecom>
+            <system value="email" />
+            <value value="philip@alliedworld.healthcare" />
+        </telecom>
+    </contact>
+    <description value="Relationship Status for Philippines" />
+    <copyright value="Creative Commons, no rights reserved" />
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/v3/MaritalStatus" />
+            <concept>
+                <code value="D" />
+                <display value="Diborxo" />
+            </concept>
+            <concept>
+                <code value="Kb" />
+                <display value="Maraming Kabit" />
+            </concept>
+            <valueSet value="http://hl7.org/fhir/ValueSet/v3-MaritalStatus" />
+            <valueSet value="http://hl7.org/fhir/ValueSet/marital-status" />
+        </include>
+    </compose>
+</ValueSet>
