@@ -1,0 +1,10 @@
+{
+    "resourceType": "Organization",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Novartis<a name='mm'/></div>"
+    },
+    "id": "cf-1532612529093",
+    "name": "Novartis Pharmaceutics",
+    "active": true
+  }

@@ -1,0 +1,49 @@
+{
+  "resourceType": "Appointment",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Infected Toe Checkup<a name='mm'/></div>"
+  },
+  "id": "cf-1532543693561",
+  "status": "proposed",
+  "participant": [
+    {
+      "actor": {
+        "reference": "Patient/cf-1532538148184"
+      },
+      "status": "tentative"
+    },
+    {
+      "actor": {
+        "reference": "Practitioner/cf-1532538191476"
+      },
+      "status": "accepted"
+    }
+  ],
+  "indication": [
+    {
+      "reference": "Condition/cf-1532609381982"
+    }
+  ],
+  "appointmentType": {
+    "coding": [
+      {
+        "code": "ROUTINE",
+        "system": "http://hl7.org/fhir/v2/0276",
+        "display": "Routine appointment - default if not valued"
+      }
+    ]
+  },
+  "reason": [
+    {
+      "coding": [
+        {
+          "code": "ROUTINE",
+          "system": "http://hl7.org/fhir/v2/0276",
+          "display": "Routine appointment - default if not valued"
+        }
+      ]
+    }
+  ],
+  "description": "Appointment with Dr. Quack for consultation with miko's infected to"
+}

@@ -1,0 +1,131 @@
+{
+    "resourceType": "Observation",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Blood Pressure<a name='mm'/></div>"
+    },
+    "id": "cf-1532604688613",
+    "subject": {
+      "reference": "Patient/cf-1532538148184"
+    },
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "85354-9",
+          "display": "Bood pressure panel with all children optional"
+        }
+      ],
+      "text": "Blood pressure systolic & diastolic"
+    },
+    "effectiveDateTime": "2018-07-25T20:48:01.984Z",
+    "performer": [
+      {
+        "reference": "Practitioner/example"
+      }
+    ],
+    "interpretation": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/v2/0078",
+          "code": "L",
+          "display": "low"
+        }
+      ],
+      "text": "Below low normal"
+    },
+    "bodySite": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "368209003",
+          "display": "Right arm"
+        }
+      ]
+    },
+    "component": [
+      {
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271649006",
+              "display": "Systolic blood pressure"
+            },
+            {
+              "system": "http://acme.org/devices/clinical-codes",
+              "code": "bp-s",
+              "display": "Systolic Blood pressure"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 107,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        },
+        "interpretation": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0078",
+              "code": "N",
+              "display": "normal"
+            }
+          ],
+          "text": "Normal"
+        }
+      },
+      {
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 60,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        },
+        "interpretation": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0078",
+              "code": "L",
+              "display": "low"
+            }
+          ],
+          "text": "Below low normal"
+        }
+      }
+    ],
+    "related": [
+      {
+        "target": {
+          "reference": "QuestionnaireResponse/cf-1532605232418"
+        }
+      }
+    ]
+  }

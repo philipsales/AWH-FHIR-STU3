@@ -1,0 +1,33 @@
+{
+    "resourceType": "ReferralRequest",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>CAM Referral<a name='mm'/></div>"
+    },
+    "id": "cf-1532613325987",
+    "subject": {
+      "reference": "Patient/cf-1532538148184"
+    },
+    "context": {
+      "reference": "Encounter/cf-1532543008109"
+    },
+    "occurrenceDateTime": "2018-07-19T14:57:00.000Z",
+    "authoredOn": "2018-07-25T14:57:00.000Z",
+    "requester": {
+      "agent": {
+        "reference": "Practitioner/cf-1532545346739"
+      }
+    },
+    "recipient": [
+      {
+        "reference": "Practitioner/cf-1532538191476"
+      }
+    ],
+    "reasonReference": [
+      {
+        "reference": "Condition/cf-1532609381982"
+      }
+    ],
+    "status": "active",
+    "intent": "proposal"
+  }

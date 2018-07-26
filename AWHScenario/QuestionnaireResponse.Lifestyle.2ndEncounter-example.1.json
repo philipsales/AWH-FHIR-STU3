@@ -1,0 +1,32 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Lifestyle-2ndVisit<a name='mm'/></div>"
+  },
+  "id": "cf-1532543970082",
+  "questionnaire": {
+    "reference": "Questionnaire/cf-1532538313823"
+  },
+  "status": "completed",
+  "context": {
+    "reference": "Encounter/cf-1532543008109"
+  },
+  "author": {
+    "reference": "Practitioner/cf-1532545346739"
+  },
+  "item": [
+    {
+      "linkId": "11",
+      "text": "This is text for display integer question",
+      "answer": [
+        {
+          "valueInteger": 1
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/cf-1532538148184"
+  }
+}

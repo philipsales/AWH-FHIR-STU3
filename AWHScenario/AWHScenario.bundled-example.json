@@ -1,0 +1,2917 @@
+{
+  "resourceType": "Bundle",
+  "id": "cf-1532538050188",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Appointment",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Infected Toe Checkup<a name='mm'/></div>"
+        },
+        "id": "cf-1532543693561",
+        "status": "proposed",
+        "participant": [
+          {
+            "actor": {
+              "reference": "Patient/cf-1532538148184"
+            },
+            "status": "tentative"
+          },
+          {
+            "actor": {
+              "reference": "Practitioner/cf-1532538191476"
+            },
+            "status": "accepted"
+          }
+        ],
+        "indication": [
+          {
+            "reference": "Condition/cf-1532609381982"
+          }
+        ],
+        "appointmentType": {
+          "coding": [
+            {
+              "code": "ROUTINE",
+              "system": "http://hl7.org/fhir/v2/0276",
+              "display": "Routine appointment - default if not valued"
+            }
+          ]
+        },
+        "reason": [
+          {
+            "coding": [
+              {
+                "code": "ROUTINE",
+                "system": "http://hl7.org/fhir/v2/0276",
+                "display": "Routine appointment - default if not valued"
+              }
+            ]
+          }
+        ],
+        "description": "Appointment with Dr. Quack for consultation with miko's infected to"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Bundle",
+        "id": "cf-1532605876905",
+        "type": "collection",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>AWH KH Questions set<a name='mm'/></div>"
+        },
+        "entry": [
+          {
+            "fullUrl": "http://hapi.fhir.org/baseDstu3/Questionnaire/cf-1532605014577",
+            "resource": {
+              "resourceType": "Questionnaire",
+              "text": {
+                "status": "generated",
+                "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Vital Signs Questionnaire<a name='mm'/></div>"
+              },
+              "jurisdiction": [
+                {
+                  "coding": [
+                    {
+                      "system": "urn:iso:std:iso:3166",
+                      "code": "KH",
+                      "display": "Cambodia"
+                    }
+                  ]
+                }
+              ],
+              "identifier": [
+                {
+                  "value": "awh-questionnaire-vitalsigns"
+                }
+              ],
+              "contained": [
+                {
+                  "resourceType": "ValueSet",
+                  "id": "reference-contained-options",
+                  "identifier": [
+                    {
+                      "system": "http://hl7.org",
+                      "value": "http://hl7.org/fhir/administrative-gender"
+                    }
+                  ],
+                  "name": "Administrative Gender",
+                  "status": "active",
+                  "description": "Gender",
+                  "compose": {
+                    "include": [
+                      {
+                        "system": "http://hl7.org",
+                        "concept": [
+                          {
+                            "code": "option 1",
+                            "display": "option 1"
+                          },
+                          {
+                            "code": "option 2",
+                            "display": "option 2"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "url": "http://hapi.fhir.org/baseDstu3/Questionnaire/cf-1532605014577",
+              "id": "cf-1532605014577",
+              "version": "0.0.1",
+              "name": "Lifestyle Questionnaire",
+              "title": "Lifestyle Questionnaire",
+              "status": "active",
+              "experimental": false,
+              "date": "2018-07-03",
+              "description": "Questionnaire for Lifestyle",
+              "purpose": "Questionnaire for Lifestyle",
+              "approvalDate": "2018-07-03",
+              "lastReviewDate": "2018-07-03",
+              "effectivePeriod": {
+                "start": "2018-07-03",
+                "end": "2019-07-03"
+              },
+              "publisher": "Allied World Healthcare",
+              "copyright": "Creative Commons",
+              "subjectType": [
+                "Patient",
+                "Person",
+                "RelatedPerson"
+              ],
+              "item": [
+                {
+                  "linkId": "110",
+                  "text": "This is the generic meta-data of an item?",
+                  "prefix": "a.",
+                  "readOnly": false,
+                  "maxLength": 20,
+                  "repeats": false,
+                  "type": "string",
+                  "required": false,
+                  "initialString": "default value"
+                },
+                {
+                  "linkId": "11",
+                  "text": "This is a question with integer answer?",
+                  "type": "integer",
+                  "required": true
+                },
+                {
+                  "linkId": "12",
+                  "text": "This is a question with a default integer answer?",
+                  "type": "integer",
+                  "required": true,
+                  "initialInteger": 1
+                },
+                {
+                  "linkId": "13",
+                  "text": "This is a question with decimal answer?",
+                  "type": "decimal",
+                  "required": true
+                },
+                {
+                  "linkId": "14",
+                  "text": "This is a question with a default decimal answer?",
+                  "type": "decimal",
+                  "required": true,
+                  "initialDecimal": 1.01
+                },
+                {
+                  "linkId": "10",
+                  "text": "This is a question with string answer?",
+                  "type": "string",
+                  "required": true,
+                  "maxLength": 20,
+                  "readOnly": false
+                },
+                {
+                  "linkId": "20",
+                  "text": "This is a question with default string value?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "initialString": "this is a default string value"
+                },
+                {
+                  "linkId": "60",
+                  "text": "This is a question with boolean answer?",
+                  "type": "boolean",
+                  "required": false
+                },
+                {
+                  "linkId": "23",
+                  "text": "This is a question with default boolean value?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 10,
+                  "initialBoolean": true
+                },
+                {
+                  "linkId": "50",
+                  "text": "This is a question with birthdate answer?",
+                  "type": "date",
+                  "required": false
+                },
+                {
+                  "linkId": "0",
+                  "text": "This is a question with grouping?",
+                  "type": "group",
+                  "item": [
+                    {
+                      "linkId": "0.1",
+                      "text": "this is a 1st question within a group?",
+                      "type": "string",
+                      "required": false,
+                      "maxLength": 20,
+                      "initialString": "official"
+                    },
+                    {
+                      "linkId": "0.2",
+                      "text": "this is a 2nd question within a group?",
+                      "type": "string",
+                      "required": true,
+                      "maxLength": 20
+                    }
+                  ]
+                },
+                {
+                  "linkId": "210",
+                  "text": "This is a multiple question (radio button) with external referenced options?",
+                  "type": "open-choice",
+                  "options": {
+                    "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+                  }
+                },
+                {
+                  "linkId": "21",
+                  "text": "This is a multiple question (checkbox) with external referenced options?",
+                  "type": "choice",
+                  "options": {
+                    "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+                  }
+                },
+                {
+                  "linkId": "40",
+                  "text": "This is a multiple question (radio botton) with contained referenced options?",
+                  "type": "choice",
+                  "options": {
+                    "reference": "#reference-contained-options"
+                  }
+                },
+                {
+                  "linkId": "41",
+                  "text": "This is a multiple question (radio botton) with embedded options?",
+                  "type": "choice",
+                  "option": [
+                    {
+                      "valueCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 1",
+                        "display": "option 1"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 2",
+                        "display": "option 2"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "22",
+                  "text": "This is a string question with dependency to the embedded options value?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "enableWhen": [
+                    {
+                      "question": "41",
+                      "answerCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 2",
+                        "display": "option 2"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "24",
+                  "text": "This is a string question with dependency to string question?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "enableWhen": [
+                    {
+                      "question": "10",
+                      "hasAnswer": true
+                    }
+                  ]
+                },
+                {
+                  "linkId": "240",
+                  "text": "This is a string question with dependency to boolean question?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "enableWhen": [
+                    {
+                      "question": "60",
+                      "hasAnswer": true
+                    }
+                  ]
+                },
+                {
+                  "linkId": "25",
+                  "text": "This is a multiple question (radio button) with dependency to the embedded options value?",
+                  "type": "choice",
+                  "enableWhen": [
+                    {
+                      "question": "41",
+                      "answerCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 2",
+                        "display": "option 2"
+                      }
+                    }
+                  ],
+                  "options": {
+                    "reference": "#reference-contained-options"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "fullUrl": "http://hapi.fhir.org/baseDstu3/Questionnaire/cf-1532538313823",
+            "resource": {
+              "resourceType": "Questionnaire",
+              "text": {
+                "status": "generated",
+                "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Lifestyle Questionnaire<a name='mm'/></div>"
+              },
+              "jurisdiction": [
+                {
+                  "coding": [
+                    {
+                      "system": "urn:iso:std:iso:3166",
+                      "code": "KH",
+                      "display": "Cambodia"
+                    }
+                  ]
+                }
+              ],
+              "identifier": [
+                {
+                  "value": "awh-questionnaire-lifestyle"
+                }
+              ],
+              "contained": [
+                {
+                  "resourceType": "ValueSet",
+                  "id": "reference-contained-options",
+                  "identifier": [
+                    {
+                      "system": "http://hl7.org",
+                      "value": "http://hl7.org/fhir/administrative-gender"
+                    }
+                  ],
+                  "name": "Administrative Gender",
+                  "status": "active",
+                  "description": "Gender",
+                  "compose": {
+                    "include": [
+                      {
+                        "system": "http://hl7.org",
+                        "concept": [
+                          {
+                            "code": "option 1",
+                            "display": "option 1"
+                          },
+                          {
+                            "code": "option 2",
+                            "display": "option 2"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "url": "http://hapi.fhir.org/baseDstu3/Questionnaire/cf-1532538313823",
+              "id": "cf-1532538313823",
+              "version": "0.0.1",
+              "name": "Lifestyle Questionnaire",
+              "title": "Lifestyle Questionnaire",
+              "status": "active",
+              "experimental": false,
+              "date": "2018-07-03",
+              "description": "Questionnaire for  Lifestyle",
+              "purpose": "Questionnaire for Lifestyle",
+              "approvalDate": "2018-07-03",
+              "lastReviewDate": "2018-07-03",
+              "effectivePeriod": {
+                "start": "2018-07-03",
+                "end": "2019-07-03"
+              },
+              "publisher": "Allied World Healthcare",
+              "copyright": "Creative Commons",
+              "subjectType": [
+                "Patient",
+                "Person",
+                "RelatedPerson"
+              ],
+              "item": [
+                {
+                  "linkId": "110",
+                  "text": "This is the generic meta-data of an item?",
+                  "prefix": "a.",
+                  "readOnly": false,
+                  "maxLength": 20,
+                  "repeats": false,
+                  "type": "string",
+                  "required": false,
+                  "initialString": "default value"
+                },
+                {
+                  "linkId": "11",
+                  "text": "This is a question with integer answer?",
+                  "type": "integer",
+                  "required": true
+                },
+                {
+                  "linkId": "12",
+                  "text": "This is a question with a default integer answer?",
+                  "type": "integer",
+                  "required": true,
+                  "initialInteger": 1
+                },
+                {
+                  "linkId": "13",
+                  "text": "This is a question with decimal answer?",
+                  "type": "decimal",
+                  "required": true
+                },
+                {
+                  "linkId": "14",
+                  "text": "This is a question with a default decimal answer?",
+                  "type": "decimal",
+                  "required": true,
+                  "initialDecimal": 1.01
+                },
+                {
+                  "linkId": "10",
+                  "text": "This is a question with string answer?",
+                  "type": "string",
+                  "required": true,
+                  "maxLength": 20,
+                  "readOnly": false
+                },
+                {
+                  "linkId": "20",
+                  "text": "This is a question with default string value?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "initialString": "this is a default string value"
+                },
+                {
+                  "linkId": "60",
+                  "text": "This is a question with boolean answer?",
+                  "type": "boolean",
+                  "required": false
+                },
+                {
+                  "linkId": "23",
+                  "text": "This is a question with default boolean value?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 10,
+                  "initialBoolean": true
+                },
+                {
+                  "linkId": "50",
+                  "text": "This is a question with birthdate answer?",
+                  "type": "date",
+                  "required": false
+                },
+                {
+                  "linkId": "0",
+                  "text": "This is a question with grouping?",
+                  "type": "group",
+                  "item": [
+                    {
+                      "linkId": "0.1",
+                      "text": "this is a 1st question within a group?",
+                      "type": "string",
+                      "required": false,
+                      "maxLength": 20,
+                      "initialString": "official"
+                    },
+                    {
+                      "linkId": "0.2",
+                      "text": "this is a 2nd question within a group?",
+                      "type": "string",
+                      "required": true,
+                      "maxLength": 20
+                    }
+                  ]
+                },
+                {
+                  "linkId": "210",
+                  "text": "This is a multiple question (radio button) with external referenced options?",
+                  "type": "open-choice",
+                  "options": {
+                    "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+                  }
+                },
+                {
+                  "linkId": "21",
+                  "text": "This is a multiple question (checkbox) with external referenced options?",
+                  "type": "choice",
+                  "options": {
+                    "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+                  }
+                },
+                {
+                  "linkId": "40",
+                  "text": "This is a multiple question (radio botton) with contained referenced options?",
+                  "type": "choice",
+                  "options": {
+                    "reference": "#reference-contained-options"
+                  }
+                },
+                {
+                  "linkId": "41",
+                  "text": "This is a multiple question (radio botton) with embedded options?",
+                  "type": "choice",
+                  "option": [
+                    {
+                      "valueCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 1",
+                        "display": "option 1"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 2",
+                        "display": "option 2"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "22",
+                  "text": "This is a string question with dependency to the embedded options value?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "enableWhen": [
+                    {
+                      "question": "41",
+                      "answerCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 2",
+                        "display": "option 2"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "24",
+                  "text": "This is a string question with dependency to string question?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "enableWhen": [
+                    {
+                      "question": "10",
+                      "hasAnswer": true
+                    }
+                  ]
+                },
+                {
+                  "linkId": "240",
+                  "text": "This is a string question with dependency to boolean question?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "enableWhen": [
+                    {
+                      "question": "60",
+                      "hasAnswer": true
+                    }
+                  ]
+                },
+                {
+                  "linkId": "25",
+                  "text": "This is a multiple question (radio button) with dependency  to the embedded options value?",
+                  "type": "choice",
+                  "enableWhen": [
+                    {
+                      "question": "41",
+                      "answerCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 2",
+                        "display": "option 2"
+                      }
+                    }
+                  ],
+                  "options": {
+                    "reference": "#reference-contained-options"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Bundle",
+        "id": "cf-1532608266016",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>AWH PH Questions set<a name='mm'/></div>"
+        },
+        "type": "collection",
+        "entry": [
+          {
+            "fullUrl": "http://hapi.fhir.org/baseDstu3/Questionnaire/cf-1532605014577",
+            "resource": {
+              "resourceType": "Questionnaire",
+              "text": {
+                "status": "generated",
+                "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Vital Signs Questionnaire<a name='mm'/></div>"
+              },
+              "jurisdiction": [
+                {
+                  "coding": [
+                    {
+                      "system": "urn:iso:std:iso:3166",
+                      "code": "PH",
+                      "display": "Philippines"
+                    }
+                  ]
+                }
+              ],
+              "identifier": [
+                {
+                  "value": "awh-questionnaire-vitalsigns"
+                }
+              ],
+              "contained": [
+                {
+                  "resourceType": "ValueSet",
+                  "id": "reference-contained-options",
+                  "identifier": [
+                    {
+                      "system": "http://hl7.org",
+                      "value": "http://hl7.org/fhir/administrative-gender"
+                    }
+                  ],
+                  "name": "Administrative Gender",
+                  "status": "active",
+                  "description": "Gender",
+                  "compose": {
+                    "include": [
+                      {
+                        "system": "http://hl7.org",
+                        "concept": [
+                          {
+                            "code": "option 1",
+                            "display": "option 1"
+                          },
+                          {
+                            "code": "option 2",
+                            "display": "option 2"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "url": "http://hapi.fhir.org/baseDstu3/Questionnaire/cf-1532605014577",
+              "id": "cf-1532605014577",
+              "version": "0.0.1",
+              "name": "Lifestyle Questionnaire",
+              "title": "Lifestyle Questionnaire",
+              "status": "active",
+              "experimental": false,
+              "date": "2018-07-03",
+              "description": "Questionnaire for Lifestyle",
+              "purpose": "Questionnaire for Lifestyle",
+              "approvalDate": "2018-07-03",
+              "lastReviewDate": "2018-07-03",
+              "effectivePeriod": {
+                "start": "2018-07-03",
+                "end": "2019-07-03"
+              },
+              "publisher": "Allied World Healthcare",
+              "copyright": "Creative Commons",
+              "subjectType": [
+                "Patient",
+                "Person",
+                "RelatedPerson"
+              ],
+              "item": [
+                {
+                  "linkId": "110",
+                  "text": "This is the generic meta-data of an item?",
+                  "prefix": "a.",
+                  "readOnly": false,
+                  "maxLength": 20,
+                  "repeats": false,
+                  "type": "string",
+                  "required": false,
+                  "initialString": "default value"
+                },
+                {
+                  "linkId": "11",
+                  "text": "This is a question with integer answer?",
+                  "type": "integer",
+                  "required": true
+                },
+                {
+                  "linkId": "12",
+                  "text": "This is a question with a default integer answer?",
+                  "type": "integer",
+                  "required": true,
+                  "initialInteger": 1
+                },
+                {
+                  "linkId": "13",
+                  "text": "This is a question with decimal answer?",
+                  "type": "decimal",
+                  "required": true
+                },
+                {
+                  "linkId": "14",
+                  "text": "This is a question with a default decimal answer?",
+                  "type": "decimal",
+                  "required": true,
+                  "initialDecimal": 1.01
+                },
+                {
+                  "linkId": "10",
+                  "text": "This is a question with string answer?",
+                  "type": "string",
+                  "required": true,
+                  "maxLength": 20,
+                  "readOnly": false
+                },
+                {
+                  "linkId": "20",
+                  "text": "This is a question with default string value?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "initialString": "this is a default string value"
+                },
+                {
+                  "linkId": "60",
+                  "text": "This is a question with boolean answer?",
+                  "type": "boolean",
+                  "required": false
+                },
+                {
+                  "linkId": "23",
+                  "text": "This is a question with default boolean value?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 10,
+                  "initialBoolean": true
+                },
+                {
+                  "linkId": "50",
+                  "text": "This is a question with birthdate answer?",
+                  "type": "date",
+                  "required": false
+                },
+                {
+                  "linkId": "0",
+                  "text": "This is a question with grouping?",
+                  "type": "group",
+                  "item": [
+                    {
+                      "linkId": "0.1",
+                      "text": "this is a 1st question within a group?",
+                      "type": "string",
+                      "required": false,
+                      "maxLength": 20,
+                      "initialString": "official"
+                    },
+                    {
+                      "linkId": "0.2",
+                      "text": "this is a 2nd question within a group?",
+                      "type": "string",
+                      "required": true,
+                      "maxLength": 20
+                    }
+                  ]
+                },
+                {
+                  "linkId": "210",
+                  "text": "This is a multiple question (radio button) with external referenced options?",
+                  "type": "open-choice",
+                  "options": {
+                    "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+                  }
+                },
+                {
+                  "linkId": "21",
+                  "text": "This is a multiple question (checkbox) with external referenced options?",
+                  "type": "choice",
+                  "options": {
+                    "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+                  }
+                },
+                {
+                  "linkId": "40",
+                  "text": "This is a multiple question (radio botton) with contained referenced options?",
+                  "type": "choice",
+                  "options": {
+                    "reference": "#reference-contained-options"
+                  }
+                },
+                {
+                  "linkId": "41",
+                  "text": "This is a multiple question (radio botton) with embedded options?",
+                  "type": "choice",
+                  "option": [
+                    {
+                      "valueCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 1",
+                        "display": "option 1"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 2",
+                        "display": "option 2"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "22",
+                  "text": "This is a string question with dependency to the embedded options value?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "enableWhen": [
+                    {
+                      "question": "41",
+                      "answerCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 2",
+                        "display": "option 2"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "24",
+                  "text": "This is a string question with dependency to string question?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "enableWhen": [
+                    {
+                      "question": "10",
+                      "hasAnswer": true
+                    }
+                  ]
+                },
+                {
+                  "linkId": "240",
+                  "text": "This is a string question with dependency to boolean question?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "enableWhen": [
+                    {
+                      "question": "60",
+                      "hasAnswer": true
+                    }
+                  ]
+                },
+                {
+                  "linkId": "25",
+                  "text": "This is a multiple question (radio button) with dependency to the embedded options value?",
+                  "type": "choice",
+                  "enableWhen": [
+                    {
+                      "question": "41",
+                      "answerCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 2",
+                        "display": "option 2"
+                      }
+                    }
+                  ],
+                  "options": {
+                    "reference": "#reference-contained-options"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "fullUrl": "http://hapi.fhir.org/baseDstu3/Questionnaire/cf-1532538313823",
+            "resource": {
+              "resourceType": "Questionnaire",
+              "text": {
+                "status": "generated",
+                "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Lifestyle Questionnaire<a name='mm'/></div>"
+              },
+              "jurisdiction": [
+                {
+                  "coding": [
+                    {
+                      "system": "urn:iso:std:iso:3166",
+                      "code": "PH",
+                      "display": "Philippines"
+                    }
+                  ]
+                }
+              ],
+              "identifier": [
+                {
+                  "value": "awh-questionnaire-lifestyle"
+                }
+              ],
+              "contained": [
+                {
+                  "resourceType": "ValueSet",
+                  "id": "reference-contained-options",
+                  "identifier": [
+                    {
+                      "system": "http://hl7.org",
+                      "value": "http://hl7.org/fhir/administrative-gender"
+                    }
+                  ],
+                  "name": "Administrative Gender",
+                  "status": "active",
+                  "description": "Gender",
+                  "compose": {
+                    "include": [
+                      {
+                        "system": "http://hl7.org",
+                        "concept": [
+                          {
+                            "code": "option 1",
+                            "display": "option 1"
+                          },
+                          {
+                            "code": "option 2",
+                            "display": "option 2"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "url": "http://hapi.fhir.org/baseDstu3/Questionnaire/cf-1532538313823",
+              "id": "cf-1532538313823",
+              "version": "0.0.1",
+              "name": "Lifestyle Questionnaire",
+              "title": "Lifestyle Questionnaire",
+              "status": "active",
+              "experimental": false,
+              "date": "2018-07-03",
+              "description": "Questionnaire for  Lifestyle",
+              "purpose": "Questionnaire for Lifestyle",
+              "approvalDate": "2018-07-03",
+              "lastReviewDate": "2018-07-03",
+              "effectivePeriod": {
+                "start": "2018-07-03",
+                "end": "2019-07-03"
+              },
+              "publisher": "Allied World Healthcare",
+              "copyright": "Creative Commons",
+              "subjectType": [
+                "Patient",
+                "Person",
+                "RelatedPerson"
+              ],
+              "item": [
+                {
+                  "linkId": "110",
+                  "text": "This is the generic meta-data of an item?",
+                  "prefix": "a.",
+                  "readOnly": false,
+                  "maxLength": 20,
+                  "repeats": false,
+                  "type": "string",
+                  "required": false,
+                  "initialString": "default value"
+                },
+                {
+                  "linkId": "11",
+                  "text": "This is a question with integer answer?",
+                  "type": "integer",
+                  "required": true
+                },
+                {
+                  "linkId": "12",
+                  "text": "This is a question with a default integer answer?",
+                  "type": "integer",
+                  "required": true,
+                  "initialInteger": 1
+                },
+                {
+                  "linkId": "13",
+                  "text": "This is a question with decimal answer?",
+                  "type": "decimal",
+                  "required": true
+                },
+                {
+                  "linkId": "14",
+                  "text": "This is a question with a default decimal answer?",
+                  "type": "decimal",
+                  "required": true,
+                  "initialDecimal": 1.01
+                },
+                {
+                  "linkId": "10",
+                  "text": "This is a question with string answer?",
+                  "type": "string",
+                  "required": true,
+                  "maxLength": 20,
+                  "readOnly": false
+                },
+                {
+                  "linkId": "20",
+                  "text": "This is a question with default string value?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "initialString": "this is a default string value"
+                },
+                {
+                  "linkId": "60",
+                  "text": "This is a question with boolean answer?",
+                  "type": "boolean",
+                  "required": false
+                },
+                {
+                  "linkId": "23",
+                  "text": "This is a question with default boolean value?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 10,
+                  "initialBoolean": true
+                },
+                {
+                  "linkId": "50",
+                  "text": "This is a question with birthdate answer?",
+                  "type": "date",
+                  "required": false
+                },
+                {
+                  "linkId": "0",
+                  "text": "This is a question with grouping?",
+                  "type": "group",
+                  "item": [
+                    {
+                      "linkId": "0.1",
+                      "text": "this is a 1st question within a group?",
+                      "type": "string",
+                      "required": false,
+                      "maxLength": 20,
+                      "initialString": "official"
+                    },
+                    {
+                      "linkId": "0.2",
+                      "text": "this is a 2nd question within a group?",
+                      "type": "string",
+                      "required": true,
+                      "maxLength": 20
+                    }
+                  ]
+                },
+                {
+                  "linkId": "210",
+                  "text": "This is a multiple question (radio button) with external referenced options?",
+                  "type": "open-choice",
+                  "options": {
+                    "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+                  }
+                },
+                {
+                  "linkId": "21",
+                  "text": "This is a multiple question (checkbox) with external referenced options?",
+                  "type": "choice",
+                  "options": {
+                    "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+                  }
+                },
+                {
+                  "linkId": "40",
+                  "text": "This is a multiple question (radio botton) with contained referenced options?",
+                  "type": "choice",
+                  "options": {
+                    "reference": "#reference-contained-options"
+                  }
+                },
+                {
+                  "linkId": "41",
+                  "text": "This is a multiple question (radio botton) with embedded options?",
+                  "type": "choice",
+                  "option": [
+                    {
+                      "valueCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 1",
+                        "display": "option 1"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 2",
+                        "display": "option 2"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "22",
+                  "text": "This is a string question with dependency to the embedded options value?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "enableWhen": [
+                    {
+                      "question": "41",
+                      "answerCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 2",
+                        "display": "option 2"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "24",
+                  "text": "This is a string question with dependency to string question?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "enableWhen": [
+                    {
+                      "question": "10",
+                      "hasAnswer": true
+                    }
+                  ]
+                },
+                {
+                  "linkId": "240",
+                  "text": "This is a string question with dependency to boolean question?",
+                  "type": "string",
+                  "required": false,
+                  "maxLength": 20,
+                  "enableWhen": [
+                    {
+                      "question": "60",
+                      "hasAnswer": true
+                    }
+                  ]
+                },
+                {
+                  "linkId": "25",
+                  "text": "This is a multiple question (radio button) with dependency  to the embedded options value?",
+                  "type": "choice",
+                  "enableWhen": [
+                    {
+                      "question": "41",
+                      "answerCoding": {
+                        "system": "http://hl7.org",
+                        "code": "option 2",
+                        "display": "option 2"
+                      }
+                    }
+                  ],
+                  "options": {
+                    "reference": "#reference-contained-options"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Diabetes<a name='mm'/></div>"
+        },
+        "id": "cf-1532600716504",
+        "subject": {
+          "reference": "Patient/cf-1532538148184"
+        },
+        "assertedDate": "2018-07-26T11:27:14.837Z",
+        "asserter": {
+          "reference": "Practitioner/cf-1532538191476"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Infected Toe<a name='mm'/></div>"
+        },
+        "id": "cf-1532609381982",
+        "subject": {
+          "reference": "Patient/cf-1532538148184"
+        },
+        "assertedDate": "2018-05-26T11:27:14.837Z",
+        "asserter": {
+          "reference": "Practitioner/cf-1532538191476"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "context": {
+          "reference": "Encounter/cf-1532543008109"
+        },
+        "evidence": [
+          {
+            "detail": [
+              {
+                "reference": "Media/cf-1532541339889"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>1st Visit<a name='mm'/></div>"
+        },
+        "id": "cf-1532538160827",
+        "subject": {
+          "reference": "Patient/cf-1532538148184"
+        },
+        "status": "arrived",
+        "class": {
+          "system": "http://hl7.org/fhir/v3/ActCode",
+          "code": "FLD",
+          "display": "field"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/cf-1532540858580"
+            }
+          }
+        ],
+        "statusHistory": [
+          {
+            "status": "arrived",
+            "period": {
+              "start": "2018-07-25T16:00:00.000Z",
+              "end": "2018-07-25T16:00:00.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>2nd Visit<a name='mm'/></div>"
+        },
+        "id": "cf-1532543008109",
+        "subject": {
+          "reference": "Patient/cf-1532538148184"
+        },
+        "status": "arrived",
+        "location": [
+          {
+            "location": {
+              "reference": "Location/cf-1532540858580"
+            }
+          }
+        ],
+        "statusHistory": [
+          {
+            "status": "arrived",
+            "period": {
+              "start": "2018-09-25T16:00:00.000Z",
+              "end": "2018-09-25T16:00:00.000Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Barangay Guimbal, Pototan<a name='mm'/></div>"
+        },
+        "id": "cf-1532540858580",
+        "status": "active",
+        "name": "Barangay Pototan",
+        "alias": [
+          "Barangay Pototan"
+        ],
+        "description": "House to House Visit in Barangay Pototan Area",
+        "type": {
+          "coding": [
+            {
+              "code": "COMM",
+              "system": "http://hl7.org/fhir/v3/RoleCode",
+              "display": "Community Location"
+            }
+          ]
+        },
+        "address": {
+          "line": [
+            "210",
+            "Sitio Ruhat",
+            "Purok"
+          ],
+          "city": "Iloilo",
+          "district": "Barangay Pototan",
+          "state": "Buiak",
+          "postalCode": "132425",
+          "country": "Philippines"
+        },
+        "position": {
+          "latitude": 46.51248,
+          "longitude": 42.11423
+        },
+        "physicalType": {
+          "coding": [
+            {
+              "code": "COMM",
+              "system": "http://hl7.org/fhir/v3/RoleCode",
+              "display": "Community Location"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Media",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Infected Toe<a name='mm'/></div>"
+        },
+        "id": "cf-1532541339889",
+        "subject": {
+          "reference": "Patient/cf-1532538148184"
+        },
+        "content": {
+          "title": "Infected Toe",
+          "contentType": "image/jpeg"
+        },
+        "type": "photo",
+        "context": {
+          "reference": "Encounter/cf-1532543008109"
+        },
+        "occurrenceDateTime": "2018-07-26T14:11:45.275Z",
+        "operator": {
+          "reference": "Practitioner/cf-1532545346739"
+        },
+        "note": [
+          {
+            "text": "Miko's infected to are like hobbit's feet",
+            "time": "2018-07-26T21:12:54+08:00"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Antibiotic<a name='mm'/></div>"
+        },
+        "id": "cf-1532611993239",
+        "status": "active",
+        "isOverTheCounter": true,
+        "isBrand": true,
+        "form": {
+          "coding": [
+            {
+              "code": "421967003",
+              "system": "http://snomed.info/sct",
+              "display": "Drug dose form"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Antiobiotic Rx<a name='mm'/></div>"
+        },
+        "id": "cf-1532611616727",
+        "subject": {
+          "reference": "Patient/cf-1532538148184"
+        },
+        "status": "active",
+        "intent": "order",
+        "category": {
+          "coding": [
+            {
+              "code": "order",
+              "system": "http://hl7.org/fhir/medication-request-intent",
+              "display": "Order"
+            }
+          ]
+        },
+        "authoredOn": "2018-07-26T14:30:15.731Z",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/cf-1532538191476"
+          }
+        },
+        "medicationReference": {
+          "reference": "Medication/cf-1532611993239"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Blood Pressure<a name='mm'/></div>"
+        },
+        "id": "cf-1532604688613",
+        "subject": {
+          "reference": "Patient/cf-1532538148184"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Bood pressure panel with all children optional"
+            }
+          ],
+          "text": "Blood pressure systolic & diastolic"
+        },
+        "effectiveDateTime": "2018-07-25T20:48:01.984Z",
+        "performer": [
+          {
+            "reference": "Practitioner/example"
+          }
+        ],
+        "interpretation": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0078",
+              "code": "L",
+              "display": "low"
+            }
+          ],
+          "text": "Below low normal"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "Right arm"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "271649006",
+                  "display": "Systolic blood pressure"
+                },
+                {
+                  "system": "http://acme.org/devices/clinical-codes",
+                  "code": "bp-s",
+                  "display": "Systolic Blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 107,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            },
+            "interpretation": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0078",
+                  "code": "N",
+                  "display": "normal"
+                }
+              ],
+              "text": "Normal"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 60,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            },
+            "interpretation": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0078",
+                  "code": "L",
+                  "display": "low"
+                }
+              ],
+              "text": "Below low normal"
+            }
+          }
+        ],
+        "related": [
+          {
+            "target": {
+              "reference": "QuestionnaireResponse/cf-1532605232418"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Blood Pressure<a name='mm'/></div>"
+        },
+        "id": "cf-1532548014039",
+        "subject": {
+          "reference": "Patient/cf-1532538148184"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Bood pressure panel with all children optional"
+            }
+          ],
+          "text": "Blood pressure systolic & diastolic"
+        },
+        "effectiveDateTime": "2018-07-25T20:48:01.984Z",
+        "performer": [
+          {
+            "reference": "Practitioner/example"
+          }
+        ],
+        "interpretation": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0078",
+              "code": "L",
+              "display": "low"
+            }
+          ],
+          "text": "Below low normal"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "Right arm"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "271649006",
+                  "display": "Systolic blood pressure"
+                },
+                {
+                  "system": "http://acme.org/devices/clinical-codes",
+                  "code": "bp-s",
+                  "display": "Systolic Blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 107,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            },
+            "interpretation": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0078",
+                  "code": "N",
+                  "display": "normal"
+                }
+              ],
+              "text": "Normal"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 60,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            },
+            "interpretation": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0078",
+                  "code": "L",
+                  "display": "low"
+                }
+              ],
+              "text": "Below low normal"
+            }
+          }
+        ],
+        "related": [
+          {
+            "target": {
+              "reference": "QuestionnaireResponse/cf-1532605232418"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Allied World Healthcare<a name='mm'/></div>"
+        },
+        "id": "cf-1532545358075",
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "cg",
+                "system": "http://hl7.org/fhir/organization-type",
+                "display": "Community Group"
+              }
+            ]
+          }
+        ],
+        "name": "Allied World Healthcare",
+        "alias": [
+          "Allied World Philippines Community Inc"
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Pototan Rural Health Unit<a name='mm'/></div>"
+        },
+        "id": "cf-1532538109883",
+        "identifier": [
+          {
+            "value": "93f226de-902b-11e8-9eb6-529269fb1451",
+            "system": "urn:uuid"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "prov",
+                "system": "http://hl7.org/fhir/organization-type",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "value": "6475265",
+            "system": "phone",
+            "use": "home"
+          },
+          {
+            "value": "09151848953",
+            "system": "other",
+            "use": "mobile"
+          },
+          {
+            "value": "6325395",
+            "system": "phone",
+            "use": "work"
+          }
+        ],
+        "alias": [
+          "Pototan Rural Health Unit, Capiz, Philippines"
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "line": [
+              "First line",
+              "Second line",
+              "Third line"
+            ],
+            "city": "City",
+            "district": "District",
+            "state": "State",
+            "postalCode": "Postal Code",
+            "country": "Country",
+            "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/cf-1532540475676"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>IloIlo Regional Health Center<a name='mm'/></div>"
+        },
+        "id": "cf-1532540475676",
+        "identifier": [
+          {
+            "value": "93f226de-902b-11e8-9eb6-529269fb1451",
+            "system": "urn:uuid"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "prov",
+                "system": "http://hl7.org/fhir/organization-type",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "value": "6475265",
+            "system": "phone",
+            "use": "home"
+          },
+          {
+            "value": "09151848953",
+            "system": "other",
+            "use": "mobile"
+          },
+          {
+            "value": "6325395",
+            "system": "phone",
+            "use": "work"
+          }
+        ],
+        "alias": [
+          "Pototan Rural Health Unit, Capiz, Philippines"
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "line": [
+              "First line",
+              "Second line",
+              "Third line"
+            ],
+            "city": "City",
+            "district": "District",
+            "state": "State",
+            "postalCode": "Postal Code",
+            "country": "Country",
+            "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Miko Chu - Patient<a name='mm'/></div>"
+        },
+        "id": "cf-1532538148184",
+        "identifier": [
+          {
+            "value": "62f226de-902b-11e8-9eb6-529269fb1459",
+            "system": "urn:uuid"
+          }
+        ],
+        "active": true,
+        "deceasedDateTime": "2018-07-25T16:12:15.975Z",
+        "managingOrganization": {
+          "reference": "Organization/cf-1532538109883"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Person",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Miko Chu - Person<a name='mm'/></div>"
+        },
+        "id": "cf-1532542476471",
+        "active": true,
+        "name": [
+          {
+            "use": "usual",
+            "prefix": [
+              "Mr"
+            ],
+            "given": [
+              "Miko",
+              "Cojuangco"
+            ],
+            "family": "Chu",
+            "suffix": [
+              "Jr."
+            ],
+            "text": "Mr. Miko Cojuangco Chu Jr."
+          }
+        ],
+        "telecom": [
+          {
+            "value": "6475265",
+            "system": "phone",
+            "use": "home"
+          },
+          {
+            "value": "09151848953",
+            "system": "other",
+            "use": "mobile"
+          },
+          {
+            "value": "6325395",
+            "system": "phone",
+            "use": "work"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-02-10",
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "line": [
+              "First line",
+              "Second line",
+              "Third line"
+            ],
+            "city": "City",
+            "district": "District",
+            "state": "State",
+            "postalCode": "Postal Code",
+            "country": "Country",
+            "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+          },
+          {
+            "use": "work",
+            "type": "physical",
+            "line": [
+              "First line",
+              "Second line",
+              "Third line"
+            ],
+            "city": "City",
+            "district": "District",
+            "state": "State",
+            "postalCode": "Postal Code",
+            "country": "Country",
+            "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+          }
+        ],
+        "link": [
+          {
+            "target": {
+              "reference": "Patient/cf-1532538148184"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Dr. Quack - Community Physician<a name='mm'/></div>"
+        },
+        "id": "cf-1532538191476",
+        "identifier": [
+          {
+            "value": "53fefa32-fcbb-4ff8-8a92-55ee120877b7",
+            "system": "urn:uuid"
+          }
+        ],
+        "active": true,
+        "birthDate": "1960-02-10",
+        "name": [
+          {
+            "use": "official",
+            "prefix": [
+              "Dr."
+            ],
+            "given": [
+              "Quack",
+              "Quail"
+            ],
+            "family": "Quartz",
+            "suffix": [
+              "Sr"
+            ],
+            "text": "Dr. Quack Quail Quartz Sr"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "line": [
+              "First line",
+              "Second line",
+              "Third line"
+            ],
+            "city": "City",
+            "district": "District",
+            "state": "State",
+            "postalCode": "Postal Code",
+            "country": "Country",
+            "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+          },
+          {
+            "use": "work",
+            "type": "physical",
+            "line": [
+              "First line",
+              "Second line",
+              "Third line"
+            ],
+            "city": "City",
+            "district": "District",
+            "state": "State",
+            "postalCode": "Postal Code",
+            "country": "Country",
+            "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+          }
+        ],
+        "telecom": [
+          {
+            "value": "6475265",
+            "system": "phone",
+            "use": "home"
+          },
+          {
+            "value": "09151848953",
+            "system": "other",
+            "use": "mobile"
+          },
+          {
+            "value": "6325395",
+            "system": "phone",
+            "use": "work"
+          }
+        ],
+        "gender": "female",
+        "qualification": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "MD",
+                  "system": "http://hl7.org/fhir/v2/0360/2.7",
+                  "display": "Doctor of Medicine"
+                }
+              ]
+            },
+            "period": {
+              "start": "2002-02-26T16:00:00.000Z",
+              "end": "2039-01-31T16:00:00.000Z"
+            },
+            "issuer": {
+              "reference": "Organization/cf-1532538109883"
+            }
+          }
+        ],
+        "communication": [
+          {
+            "coding": [
+              {
+                "code": "en-AU",
+                "system": "urn:ietf:bcp:47",
+                "display": "English (Australia)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Anj - CAM<a name='mm'/></div>"
+        },
+        "id": "cf-1532545346739",
+        "active": true,
+        "name": [
+          {
+            "use": "usual",
+            "prefix": [
+              "Mrs"
+            ],
+            "given": [
+              "Judith",
+              "Santos"
+            ],
+            "family": "Chua",
+            "suffix": [
+              "III"
+            ],
+            "text": "Mrs. Judith Santos Chua III."
+          }
+        ],
+        "telecom": [
+          {
+            "value": "6475265",
+            "system": "phone",
+            "use": "home"
+          },
+          {
+            "value": "09151848953",
+            "system": "other",
+            "use": "mobile"
+          },
+          {
+            "value": "6325395",
+            "system": "phone",
+            "use": "work"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2003-12-10",
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "line": [
+              "First line",
+              "Second line",
+              "Third line"
+            ],
+            "city": "City",
+            "district": "District",
+            "state": "State",
+            "postalCode": "Postal Code",
+            "country": "Country",
+            "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+          },
+          {
+            "use": "work",
+            "type": "physical",
+            "line": [
+              "First line",
+              "Second line",
+              "Third line"
+            ],
+            "city": "City",
+            "district": "District",
+            "state": "State",
+            "postalCode": "Postal Code",
+            "country": "Country",
+            "text": "First line, Second line, Third line, CIty, District, State, Country, Postal Code"
+          }
+        ],
+        "qualification": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "CAM",
+                  "system": "http://hl7.org/fhir/v2/0360/2.7",
+                  "display": "Community Access Manager"
+                }
+              ]
+            },
+            "issuer": {
+              "reference": "Organization/cf-1532545358075"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Questionnaire",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Lifestyle Questions<a name='mm'/></div>"
+        },
+        "jurisdiction": [
+          {
+            "coding": [
+              {
+                "system": "urn:iso:std:iso:3166",
+                "code": "KH",
+                "display": "Cambodia"
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "value": "awh-questionnaire-lifestyle"
+          }
+        ],
+        "contained": [
+          {
+            "resourceType": "ValueSet",
+            "id": "reference-contained-options",
+            "identifier": [
+              {
+                "system": "http://hl7.org",
+                "value": "http://hl7.org/fhir/administrative-gender"
+              }
+            ],
+            "name": "Administrative Gender",
+            "status": "active",
+            "description": "Gender",
+            "compose": {
+              "include": [
+                {
+                  "system": "http://hl7.org",
+                  "concept": [
+                    {
+                      "code": "option 1",
+                      "display": "option 1"
+                    },
+                    {
+                      "code": "option 2",
+                      "display": "option 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "url": "http://hapi.fhir.org/baseDstu3/Questionnaire/cf-1532538313823",
+        "id": "cf-1532538313823",
+        "version": "0.0.1",
+        "name": "Lifestyle Questionnaire",
+        "title": "Lifestyle Questionnaire",
+        "status": "active",
+        "experimental": false,
+        "date": "2018-07-03",
+        "description": "Questionnaire for  Lifestyle",
+        "purpose": "Questionnaire for Lifestyle",
+        "approvalDate": "2018-07-03",
+        "lastReviewDate": "2018-07-03",
+        "effectivePeriod": {
+          "start": "2018-07-03",
+          "end": "2019-07-03"
+        },
+        "publisher": "Allied World Healthcare",
+        "copyright": "Creative Commons",
+        "subjectType": [
+          "Patient",
+          "Person",
+          "RelatedPerson"
+        ],
+        "item": [
+          {
+            "linkId": "110",
+            "text": "This is the generic meta-data of an item?",
+            "prefix": "a.",
+            "readOnly": false,
+            "maxLength": 20,
+            "repeats": false,
+            "type": "string",
+            "required": false,
+            "initialString": "default value"
+          },
+          {
+            "linkId": "11",
+            "text": "This is a question with integer answer?",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "linkId": "12",
+            "text": "This is a question with a default integer answer?",
+            "type": "integer",
+            "required": true,
+            "initialInteger": 1
+          },
+          {
+            "linkId": "13",
+            "text": "This is a question with decimal answer?",
+            "type": "decimal",
+            "required": true
+          },
+          {
+            "linkId": "14",
+            "text": "This is a question with a default decimal answer?",
+            "type": "decimal",
+            "required": true,
+            "initialDecimal": 1.01
+          },
+          {
+            "linkId": "10",
+            "text": "This is a question with string answer?",
+            "type": "string",
+            "required": true,
+            "maxLength": 20,
+            "readOnly": false
+          },
+          {
+            "linkId": "20",
+            "text": "This is a question with default string value?",
+            "type": "string",
+            "required": false,
+            "maxLength": 20,
+            "initialString": "this is a default string value"
+          },
+          {
+            "linkId": "60",
+            "text": "This is a question with boolean answer?",
+            "type": "boolean",
+            "required": false
+          },
+          {
+            "linkId": "23",
+            "text": "This is a question with default boolean value?",
+            "type": "string",
+            "required": false,
+            "maxLength": 10,
+            "initialBoolean": true
+          },
+          {
+            "linkId": "50",
+            "text": "This is a question with birthdate answer?",
+            "type": "date",
+            "required": false
+          },
+          {
+            "linkId": "0",
+            "text": "This is a question with grouping?",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "0.1",
+                "text": "this is a 1st question within a group?",
+                "type": "string",
+                "required": false,
+                "maxLength": 20,
+                "initialString": "official"
+              },
+              {
+                "linkId": "0.2",
+                "text": "this is a 2nd question within a group?",
+                "type": "string",
+                "required": true,
+                "maxLength": 20
+              }
+            ]
+          },
+          {
+            "linkId": "210",
+            "text": "This is a multiple question (radio button) with external referenced options?",
+            "type": "open-choice",
+            "options": {
+              "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+            }
+          },
+          {
+            "linkId": "21",
+            "text": "This is a multiple question (checkbox) with external referenced options?",
+            "type": "choice",
+            "options": {
+              "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+            }
+          },
+          {
+            "linkId": "40",
+            "text": "This is a multiple question (radio botton) with contained referenced options?",
+            "type": "choice",
+            "options": {
+              "reference": "#reference-contained-options"
+            }
+          },
+          {
+            "linkId": "41",
+            "text": "This is a multiple question (radio botton) with embedded options?",
+            "type": "choice",
+            "option": [
+              {
+                "valueCoding": {
+                  "system": "http://hl7.org",
+                  "code": "option 1",
+                  "display": "option 1"
+                }
+              },
+              {
+                "valueCoding": {
+                  "system": "http://hl7.org",
+                  "code": "option 2",
+                  "display": "option 2"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "22",
+            "text": "This is a string question with dependency to the embedded options value?",
+            "type": "string",
+            "required": false,
+            "maxLength": 20,
+            "enableWhen": [
+              {
+                "question": "41",
+                "answerCoding": {
+                  "system": "http://hl7.org",
+                  "code": "option 2",
+                  "display": "option 2"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "24",
+            "text": "This is a string question with dependency to string question?",
+            "type": "string",
+            "required": false,
+            "maxLength": 20,
+            "enableWhen": [
+              {
+                "question": "10",
+                "hasAnswer": true
+              }
+            ]
+          },
+          {
+            "linkId": "240",
+            "text": "This is a string question with dependency to boolean question?",
+            "type": "string",
+            "required": false,
+            "maxLength": 20,
+            "enableWhen": [
+              {
+                "question": "60",
+                "hasAnswer": true
+              }
+            ]
+          },
+          {
+            "linkId": "25",
+            "text": "This is a multiple question (radio button) with dependency  to the embedded options value?",
+            "type": "choice",
+            "enableWhen": [
+              {
+                "question": "41",
+                "answerCoding": {
+                  "system": "http://hl7.org",
+                  "code": "option 2",
+                  "display": "option 2"
+                }
+              }
+            ],
+            "options": {
+              "reference": "#reference-contained-options"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Questionnaire",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Vital Signs Questionnaire<a name='mm'/></div>"
+        },
+        "jurisdiction": [
+          {
+            "coding": [
+              {
+                "system": "urn:iso:std:iso:3166",
+                "code": "KH",
+                "display": "Cambodia"
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "value": "awh-questionnaire-vitalsigns"
+          }
+        ],
+        "contained": [
+          {
+            "resourceType": "ValueSet",
+            "id": "reference-contained-options",
+            "identifier": [
+              {
+                "system": "http://hl7.org",
+                "value": "http://hl7.org/fhir/administrative-gender"
+              }
+            ],
+            "name": "Administrative Gender",
+            "status": "active",
+            "description": "Gender",
+            "compose": {
+              "include": [
+                {
+                  "system": "http://hl7.org",
+                  "concept": [
+                    {
+                      "code": "option 1",
+                      "display": "option 1"
+                    },
+                    {
+                      "code": "option 2",
+                      "display": "option 2"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "url": "http://hapi.fhir.org/baseDstu3/Questionnaire/cf-1532605014577",
+        "id": "cf-1532605014577",
+        "version": "0.0.1",
+        "name": "Lifestyle Questionnaire",
+        "title": "Lifestyle Questionnaire",
+        "status": "active",
+        "experimental": false,
+        "date": "2018-07-03",
+        "description": "Questionnaire for Lifestyle",
+        "purpose": "Questionnaire for Lifestyle",
+        "approvalDate": "2018-07-03",
+        "lastReviewDate": "2018-07-03",
+        "effectivePeriod": {
+          "start": "2018-07-03",
+          "end": "2019-07-03"
+        },
+        "publisher": "Allied World Healthcare",
+        "copyright": "Creative Commons",
+        "subjectType": [
+          "Patient",
+          "Person",
+          "RelatedPerson"
+        ],
+        "item": [
+          {
+            "linkId": "110",
+            "text": "This is the generic meta-data of an item?",
+            "prefix": "a.",
+            "readOnly": false,
+            "maxLength": 20,
+            "repeats": false,
+            "type": "string",
+            "required": false,
+            "initialString": "default value"
+          },
+          {
+            "linkId": "11",
+            "text": "This is a question with integer answer?",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "linkId": "12",
+            "text": "This is a question with a default integer answer?",
+            "type": "integer",
+            "required": true,
+            "initialInteger": 1
+          },
+          {
+            "linkId": "13",
+            "text": "This is a question with decimal answer?",
+            "type": "decimal",
+            "required": true
+          },
+          {
+            "linkId": "14",
+            "text": "This is a question with a default decimal answer?",
+            "type": "decimal",
+            "required": true,
+            "initialDecimal": 1.01
+          },
+          {
+            "linkId": "10",
+            "text": "This is a question with string answer?",
+            "type": "string",
+            "required": true,
+            "maxLength": 20,
+            "readOnly": false
+          },
+          {
+            "linkId": "20",
+            "text": "This is a question with default string value?",
+            "type": "string",
+            "required": false,
+            "maxLength": 20,
+            "initialString": "this is a default string value"
+          },
+          {
+            "linkId": "60",
+            "text": "This is a question with boolean answer?",
+            "type": "boolean",
+            "required": false
+          },
+          {
+            "linkId": "23",
+            "text": "This is a question with default boolean value?",
+            "type": "string",
+            "required": false,
+            "maxLength": 10,
+            "initialBoolean": true
+          },
+          {
+            "linkId": "50",
+            "text": "This is a question with birthdate answer?",
+            "type": "date",
+            "required": false
+          },
+          {
+            "linkId": "0",
+            "text": "This is a question with grouping?",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "0.1",
+                "text": "this is a 1st question within a group?",
+                "type": "string",
+                "required": false,
+                "maxLength": 20,
+                "initialString": "official"
+              },
+              {
+                "linkId": "0.2",
+                "text": "this is a 2nd question within a group?",
+                "type": "string",
+                "required": true,
+                "maxLength": 20
+              }
+            ]
+          },
+          {
+            "linkId": "210",
+            "text": "This is a multiple question (radio button) with external referenced options?",
+            "type": "open-choice",
+            "options": {
+              "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+            }
+          },
+          {
+            "linkId": "21",
+            "text": "This is a multiple question (checkbox) with external referenced options?",
+            "type": "choice",
+            "options": {
+              "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+            }
+          },
+          {
+            "linkId": "40",
+            "text": "This is a multiple question (radio botton) with contained referenced options?",
+            "type": "choice",
+            "options": {
+              "reference": "#reference-contained-options"
+            }
+          },
+          {
+            "linkId": "41",
+            "text": "This is a multiple question (radio botton) with embedded options?",
+            "type": "choice",
+            "option": [
+              {
+                "valueCoding": {
+                  "system": "http://hl7.org",
+                  "code": "option 1",
+                  "display": "option 1"
+                }
+              },
+              {
+                "valueCoding": {
+                  "system": "http://hl7.org",
+                  "code": "option 2",
+                  "display": "option 2"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "22",
+            "text": "This is a string question with dependency to the embedded options value?",
+            "type": "string",
+            "required": false,
+            "maxLength": 20,
+            "enableWhen": [
+              {
+                "question": "41",
+                "answerCoding": {
+                  "system": "http://hl7.org",
+                  "code": "option 2",
+                  "display": "option 2"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "24",
+            "text": "This is a string question with dependency to string question?",
+            "type": "string",
+            "required": false,
+            "maxLength": 20,
+            "enableWhen": [
+              {
+                "question": "10",
+                "hasAnswer": true
+              }
+            ]
+          },
+          {
+            "linkId": "240",
+            "text": "This is a string question with dependency to boolean question?",
+            "type": "string",
+            "required": false,
+            "maxLength": 20,
+            "enableWhen": [
+              {
+                "question": "60",
+                "hasAnswer": true
+              }
+            ]
+          },
+          {
+            "linkId": "25",
+            "text": "This is a multiple question (radio button) with dependency to the embedded options value?",
+            "type": "choice",
+            "enableWhen": [
+              {
+                "question": "41",
+                "answerCoding": {
+                  "system": "http://hl7.org",
+                  "code": "option 2",
+                  "display": "option 2"
+                }
+              }
+            ],
+            "options": {
+              "reference": "#reference-contained-options"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Lifestyle-1stVisit<a name='mm'/></div>"
+        },
+        "id": "cf-1532538327496",
+        "subject": {
+          "reference": "Patient/cf-1532538148184"
+        },
+        "status": "completed",
+        "questionnaire": {
+          "reference": "Questionnaire/cf-1532538313823"
+        },
+        "context": {
+          "reference": "Encounter/cf-1532538160827"
+        },
+        "author": {
+          "reference": "Practitioner/cf-1532545346739"
+        },
+        "item": [
+          {
+            "linkId": "110",
+            "text": "This is text for display string question",
+            "answer": [
+              {
+                "valueString": "this is the answer for String"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Lifestyle-2ndVisit<a name='mm'/></div>"
+        },
+        "id": "cf-1532543970082",
+        "questionnaire": {
+          "reference": "Questionnaire/cf-1532538313823"
+        },
+        "status": "completed",
+        "context": {
+          "reference": "Encounter/cf-1532543008109"
+        },
+        "author": {
+          "reference": "Practitioner/cf-1532545346739"
+        },
+        "item": [
+          {
+            "linkId": "11",
+            "text": "This is text for display integer question",
+            "answer": [
+              {
+                "valueInteger": 1
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/cf-1532538148184"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>VitalSigns-1stVisit<a name='mm'/></div>"
+        },
+        "id": "cf-1532605232418",
+        "status": "completed",
+        "context": {
+          "reference": "Encounter/cf-1532538160827"
+        },
+        "author": {
+          "reference": "Practitioner/cf-1532545346739"
+        },
+        "item": [
+          {
+            "linkId": "110",
+            "text": "This is text for display string question",
+            "answer": [
+              {
+                "valueString": "this is the answer for String"
+              }
+            ]
+          }
+        ],
+        "questionnaire": {
+          "reference": "Questionnaire/cf-1532605014577"
+        },
+        "subject": {
+          "reference": "Patient/cf-1532538148184"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Mother of Miko<a name='mm'/></div>"
+        },
+        "id": "cf-1532542407123",
+        "patient": {
+          "reference": "Patient/cf-1532538148184"
+        },
+        "name": [
+          {
+            "use": "usual",
+            "prefix": [
+              "Mrs"
+            ],
+            "given": [
+              "Mika",
+              "Cojuangco"
+            ],
+            "family": "Chu",
+            "text": "Mrs. Mika Cojuangco Chu"
+          }
+        ],
+        "relationship": {
+          "coding": [
+            {
+              "code": "MTH",
+              "system": "http://hl7.org/fhir/v3/RoleCode",
+              "display": "mother"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

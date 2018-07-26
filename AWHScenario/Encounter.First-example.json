@@ -1,0 +1,33 @@
+{
+  "resourceType": "Encounter",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>1st Visit<a name='mm'/></div>"
+  },
+  "id": "cf-1532538160827",
+  "subject": {
+    "reference": "Patient/cf-1532538148184"
+  },
+  "status": "arrived",
+  "class": {
+    "system": "http://hl7.org/fhir/v3/ActCode",
+    "code": "FLD",
+    "display": "field"
+  },
+  "location": [
+    {
+      "location": {
+        "reference": "Location/cf-1532540858580"
+      }
+    }
+  ],
+  "statusHistory": [
+    {
+      "status": "arrived",
+      "period": {
+        "start": "2018-07-25T16:00:00.000Z",
+        "end": "2018-07-25T16:00:00.000Z"
+      }
+    }
+  ]
+}

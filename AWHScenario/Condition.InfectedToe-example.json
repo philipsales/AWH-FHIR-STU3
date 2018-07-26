@@ -1,0 +1,38 @@
+{
+    "resourceType": "Condition",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Infected Toe<a name='mm'/></div>"
+    },
+    "id": "cf-1532609381982",
+    "subject": {
+      "reference": "Patient/cf-1532538148184"
+    },
+    "assertedDate": "2018-05-26T11:27:14.837Z",
+    "asserter": {
+      "reference": "Practitioner/cf-1532538191476"
+    },
+    "clinicalStatus": "active",
+    "verificationStatus": "confirmed",
+    "context": {
+      "reference": "Encounter/cf-1532543008109"
+    },
+    "evidence": [
+      {
+        "detail": [
+          {
+            "reference": "Media/cf-1532541339889"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "code": "413108001",
+          "system": "http://snomed.info/sct",
+          "display": "O/E - infected toe"
+        }
+      ]
+    }
+  }

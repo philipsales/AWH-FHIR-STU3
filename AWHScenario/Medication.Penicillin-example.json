@@ -1,0 +1,32 @@
+{
+    "resourceType": "Medication",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Penicillin<a name='mm'/></div>"
+    },
+    "id": "cf-1532611993239",
+    "status": "active",
+    "isOverTheCounter": true,
+    "isBrand": true,
+    "form": {
+      "coding": [
+        {
+          "code": "421967003",
+          "system": "http://snomed.info/sct",
+          "display": "Drug dose form"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "code": "3145006",
+          "system": "http://snomed.info/sct",
+          "display": "Penicllin acid"
+        }
+      ]
+    },
+    "manufacturer": {
+      "reference": "Organization/cf-1532612529093"
+    }
+  }

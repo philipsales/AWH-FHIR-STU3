@@ -1,0 +1,20 @@
+{
+    "resourceType": "Encounter",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Dr. Visit<a name='mm'/></div>"
+    },
+    "id": "cf-1532613100317",
+    "subject": {
+      "reference": "Patient/cf-1532538148184"
+    },
+    "appointment": {
+      "reference": "Appointment/cf-1532543693561"
+    },
+    "incomingReferral": [
+      {
+        "reference": "ReferralRequest/cf-1532613325987"
+      }
+    ],
+    "status": "arrived"
+  }

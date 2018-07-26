@@ -1,0 +1,31 @@
+{
+    "resourceType": "MedicationRequest",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Antiobiotic Rx<a name='mm'/></div>"
+    },
+    "id": "cf-1532611616727",
+    "subject": {
+      "reference": "Patient/cf-1532538148184"
+    },
+    "status": "active",
+    "intent": "order",
+    "category": {
+      "coding": [
+        {
+          "code": "order",
+          "system": "http://hl7.org/fhir/medication-request-intent",
+          "display": "Order"
+        }
+      ]
+    },
+    "authoredOn": "2018-07-26T14:30:15.731Z",
+    "requester": {
+      "agent": {
+        "reference": "Practitioner/cf-1532538191476"
+      }
+    },
+    "medicationReference": {
+      "reference": "Medication/cf-1532611993239"
+    }
+  }

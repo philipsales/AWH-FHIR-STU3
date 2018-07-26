@@ -1,0 +1,29 @@
+{
+    "resourceType": "Media",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Infected Toe<a name='mm'/></div>"
+    },
+    "id": "cf-1532541339889",
+    "subject": {
+      "reference": "Patient/cf-1532538148184"
+    },
+    "content": {
+      "title": "Infected Toe",
+      "contentType": "image/jpeg"
+    },
+    "type": "photo",
+    "context": {
+      "reference": "Encounter/cf-1532543008109"
+    },
+    "occurrenceDateTime": "2018-07-26T14:11:45.275Z",
+    "operator": {
+      "reference": "Practitioner/cf-1532545346739"
+    },
+    "note": [
+      {
+        "text": "Miko's infected to are like hobbit's feet",
+        "time": "2018-07-26T21:12:54+08:00"
+      }
+    ]
+  }

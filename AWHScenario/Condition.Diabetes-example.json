@@ -1,0 +1,32 @@
+{
+    "resourceType": "Condition",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Diabetes<a name='mm'/></div>"
+    },
+    "id": "cf-1532600716504",
+    "subject": {
+      "reference": "Patient/cf-1532538148184"
+    },
+    "assertedDate": "2018-07-26T11:27:14.837Z",
+    "asserter": {
+      "reference": "Practitioner/cf-1532538191476"
+    },
+    "clinicalStatus": "active",
+    "verificationStatus": "confirmed",
+    "note": [
+      {
+        "text": "Diabetes diagnosis",
+        "time": "2018-07-26T22:10:13+08:00"
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "code": "73211009",
+          "system": "http://snomed.info/sct",
+          "display": "Diabetes mellitus"
+        }
+      ]
+    }
+  }

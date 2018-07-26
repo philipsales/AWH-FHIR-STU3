@@ -1,0 +1,32 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Lifestyle-1stVisit<a name='mm'/></div>"
+  },
+  "id": "cf-1532538327496",
+  "subject": {
+    "reference": "Patient/cf-1532538148184"
+  },
+  "status": "completed",
+  "questionnaire": {
+    "reference": "Questionnaire/cf-1532538313823"
+  },
+  "context": {
+    "reference": "Encounter/cf-1532538160827"
+  },
+  "author": {
+    "reference": "Practitioner/cf-1532545346739"
+  },
+  "item": [
+    {
+      "linkId": "110",
+      "text": "This is text for display string question",
+      "answer": [
+        {
+          "valueString": "this is the answer for String"
+        }
+      ]
+    }
+  ]
+}
